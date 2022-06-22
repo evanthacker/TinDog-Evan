@@ -84,4 +84,9 @@ body {
 
 .benefit-image {
   color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.benefit-image:hover {
+  color: #ff4c68;
 }
