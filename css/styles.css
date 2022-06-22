@@ -7,7 +7,7 @@
 
 /*Classes*/
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 0%;
 }
 
 .navbar-brand {
@@ -60,4 +60,28 @@ body {
   display: inline-block;
   position: relative;
   margin-left: 25%;
+}
+
+/* Features */
+
+#features {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+.benefits {
+  font-family: "Montserat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.feature-paragraph {
+  color: #8f8f8f;
+}
+
+.benefit-image {
+  color: #ef8172;
 }
