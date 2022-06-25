@@ -100,16 +100,19 @@ body {
 /* testimonials */
 
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ef8172;
   color: #ffffff;
 }
 
-#image {
+.testimonial-image {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 #press {
