@@ -30,6 +30,13 @@ h2 {
   line-height: 1.5;
 }
 
+h3 {
+  font-family: "Montserat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
 body {
   font-family: "Montserat", sans-serif;
 }
@@ -62,12 +69,11 @@ body {
 
 /* Title image */
 .title-image {
-  width: 55%;
+  width: 25%;
   transform: rotate(25deg);
   display: inline-block;
-  position: relative;
-  top: 23%;
-  left: 11%;
+  position: absolute;
+  left: 50%;
 }
 
 /* Features */
@@ -137,4 +143,35 @@ body {
 
 .pricing-column {
   padding: 3%;
+}
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* CTA */
+#cta {
+  padding: 7% 15% 0%;
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: center;
+}
+/* Footer */
+#footer {
+  padding: 2% 15% 0%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.copyright {
+  color: #928d88;
+}
+
+.social-media {
+  padding: 4% 3%;
 }
