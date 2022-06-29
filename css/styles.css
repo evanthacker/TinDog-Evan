@@ -176,7 +176,7 @@ body {
 }
 /* Footer */
 #footer {
-  padding: 2% 15% 0%;
+  padding: 7% 15% 0%;
   background-color: #ffffff;
   text-align: center;
 }
@@ -186,5 +186,5 @@ body {
 }
 
 .social-media {
-  padding: 4% 3%;
+  margin: 20px 10px;
 }
