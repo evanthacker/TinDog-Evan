@@ -1,47 +1,35 @@
-/*Id*/
+/* Headings */
 
-#title {
-  background-color: #ff4c68;
-  color: #ffffff;
-}
-
-/*Classes*/
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-
-.navbar-brand {
-  color: #ffffff;
-}
-
-/*Elements*/
-
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserat", sans-serif;
   font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
 }
-
-h2 {
-  font-family: "Montserat", sans-serif;
-  font-weight: 900;
+.section-heading {
   font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Montserat", sans-serif;
-  font-weight: 900;
-  font-size: 2.5rem;
   line-height: 1.5;
 }
 
 body {
   font-family: "Montserat", sans-serif;
+  text-align: center;
 }
 
-/* Navigation Bar */
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Navigation Bar padding: 3% 15% 7%; */
+
+.navbar-brand {
+  color: #ffffff;
+}
 
 .navbar {
   padding-bottom: 4.5rem;
@@ -67,7 +55,24 @@ body {
   margin: 5% 3% 10% 0%;
 }
 
-/* Title image */
+/* Title */
+.big-heading {
+  font-family: "Montserat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 .title-image {
   width: 25%;
   transform: rotate(25deg);
@@ -75,20 +80,40 @@ body {
   position: absolute;
   left: 50%;
 }
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1215px) {
+  .title-image {
+    position: absolute;
+    left: 55%;
+  }
+}
+
+@media (max-width: 440px) {
+  .big-heading {
+    font-size: 2.5rem;
+  }
+}
 
 /* Features */
 
 #features {
-  padding: 7% 15%;
   background-color: #ffffff;
   position: relative;
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
-.benefits {
+.feature-title {
   font-family: "Montserat", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
@@ -109,9 +134,13 @@ body {
 /* testimonials */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #ffffff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -119,14 +148,8 @@ body {
   border-radius: 100%;
   margin: 20px;
 }
-
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -138,47 +161,30 @@ body {
 
 #pricing {
   padding: 4%;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
   padding: 3%;
 }
-@media (max-width: 991px) {
-  #title {
-    text-align: center;
-  }
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-}
-
-@media (min-width: 991px) and (max-width: 1215px) {
-  .title-image {
-    position: absolute;
-    left: 55%;
-  }
-}
-
-@media (max-width: 440px) {
-  .title-h1 {
-    font-size: 2.5rem;
-  }
+.card-heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 /* CTA */
 #cta {
-  padding: 7% 15% 0%;
   background-color: #ff4c68;
   color: #ffffff;
-  text-align: center;
 }
+
 /* Footer */
 #footer {
-  padding: 7% 15% 0%;
   background-color: #ffffff;
-  text-align: center;
 }
 
 .copyright {
